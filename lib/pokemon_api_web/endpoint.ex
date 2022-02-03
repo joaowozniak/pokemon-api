@@ -7,10 +7,10 @@ defmodule PokemonApiWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_pokemon_api_key",
-    signing_salt: "YDtkR0vb"
+    signing_salt: "DoYP41xT"
   ]
 
-  socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
+  # socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
 
   # Serve at "/" the static files from "priv/static" directory.
   #
@@ -25,8 +25,6 @@ defmodule PokemonApiWeb.Endpoint do
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
   if code_reloading? do
-    socket "/phoenix/live_reload/socket", Phoenix.LiveReloader.Socket
-    plug Phoenix.LiveReloader
     plug Phoenix.CodeReloader
   end
 

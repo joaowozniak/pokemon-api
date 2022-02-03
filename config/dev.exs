@@ -13,7 +13,7 @@ config :pokemon_api, PokemonApiWeb.Endpoint,
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "3Qxl1o8WFwsdSY98dkQjTUcAyoVgXeEFtSEvwu5fw4vGcUkZkdRN7SrgmdboWsBO",
+  secret_key_base: "hnleWpdJ9C4r9UNDjCVLGBsYoL2JilOeOTKEIr/V+teHmKH0oxAS/NW5RWbFaQuP",
   watchers: [
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]}
@@ -42,17 +42,6 @@ config :pokemon_api, PokemonApiWeb.Endpoint,
 # If desired, both `http:` and `https:` keys can be
 # configured to run both http and https servers on
 # different ports.
-
-# Watch static and templates for browser reloading.
-config :pokemon_api, PokemonApiWeb.Endpoint,
-  live_reload: [
-    patterns: [
-      ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
-      ~r"priv/gettext/.*(po)$",
-      ~r"lib/pokemon_api_web/(live|views)/.*(ex)$",
-      ~r"lib/pokemon_api_web/templates/.*(eex)$"
-    ]
-  ]
 
 # Do not include metadata nor timestamps in development logs
 config :logger, :console, format: "[$level] $message\n"

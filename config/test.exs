@@ -4,7 +4,7 @@ import Config
 # you can enable the server option below.
 config :pokemon_api, PokemonApiWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
-  secret_key_base: "VCVemq9t+MZkt8gCAhcTldIo+RXMcVL9J2Q5emuqRNwH5RdAhgFvMtgLHmr1nyhm",
+  secret_key_base: "/ukBUzpnlSN7mTVxFDi/I0XB7lUjALtZB3HZyK1Avtl2efAw+S7qpxi07Xo8y5yk",
   server: false
 
 # In test we don't send emails.

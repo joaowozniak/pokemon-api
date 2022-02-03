@@ -10,9 +10,9 @@ import Config
 # Configures the endpoint
 config :pokemon_api, PokemonApiWeb.Endpoint,
   url: [host: "localhost"],
-  render_errors: [view: PokemonApiWeb.ErrorView, accepts: ~w(html json), layout: false],
+  render_errors: [view: PokemonApiWeb.ErrorView, accepts: ~w(json), layout: false],
   pubsub_server: PokemonApi.PubSub,
-  live_view: [signing_salt: "SuQReIVe"]
+  live_view: [signing_salt: "5k2AsT5c"]
 
 # Configures the mailer
 #

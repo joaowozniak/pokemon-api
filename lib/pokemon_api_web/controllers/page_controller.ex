@@ -1,7 +1,7 @@
 defmodule PokemonApiWeb.PageController do
   use PokemonApiWeb, :controller
 
-  def index(conn, _params) do
-    render(conn, "index.html")
+  def show(conn, _) do
+    conn |> send_resp(200, "okk")
   end
 end
